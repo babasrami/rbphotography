@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RB Photography · Patras, Greece | Rami Babas</title>
+    <meta
+      name="description"
+      content="RB Photography: wedding, portrait, nature and architecture photography by Rami Babas, based in Patras, Greece and available to travel worldwide."
+    />
+    <meta name="author" content="Rami Babas · RB Photography" />
+    <meta property="og:title" content="RB Photography · Patras, Greece" />
+    <meta
+      property="og:description"
+      content="Light, patience, and the frame in between. Weddings, portraits, wild places and architecture, photographed by Rami Babas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="images/og.jpg" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,500|Libre+Franklin:300&amp;display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#FAF8F5',
+              foreground: '#3F3F3F',
+              cream: '#FAF8F5',
+              sand: '#F2EFEB',
+              ink: '#252B2B',
+              'ink-foreground': '#F7F6F3',
+              blush: '#DDD1C9',
+              quote: 'rgba(88, 110, 105, 0.85)',
+              primary: '#4C4C4C',
+              'primary-foreground': '#FAFAFA',
+              'muted-foreground': '#7F7F7F',
+              border: '#E1DCD5',
+            },
+            fontFamily: {
+              display: ['Hatton', 'Georgia', 'serif'],
+              sans: ['"Nunito Sans"', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @font-face {
+        font-family: "Hatton";
+        src: url("https://static.showit.co/file/QTe7r4GKSwGRTL5c0qoYFQ/shared/hatton-regular.woff") format("woff");
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Hatton";
+        src: url("https://static.showit.co/file/jcsQNjNER_SGHWpQAmrLcA/shared/pp_hatton_medium_500.woff") format("woff");
+        font-weight: 500;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Hatton";
+        src: url("https://static.showit.co/file/jnTC8qh8Q2W_uS3jXLxVkw/shared/pphatton-lightitalic.woff") format("woff");
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+      }
+
+      :root {
+        --background: #FAF8F5;
+        --foreground: #3F3F3F;
+        --cream: #FAF8F5;
+        --sand: #F2EFEB;
+        --ink: #252B2B;
+        --ink-foreground: #F7F6F3;
+        --blush: #DDD1C9;
+        --quote: rgba(88, 110, 105, 0.85);
+        --primary: #4C4C4C;
+        --primary-foreground: #FAFAFA;
+        --muted-foreground: #7F7F7F;
+        --border: #E1DCD5;
+      }
+
+      * { border-color: var(--border); }
+      html { scroll-behavior: smooth; }
+      body {
+        background-color: var(--background);
+        color: var(--foreground);
+        font-family: "Nunito Sans", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .h-caps {
+        font-family: "Hatton", Georgia, serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 1.05;
+      }
+      .eyebrow {
+        font-family: "Nunito Sans", system-ui, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 11px;
+      }
+      .btn-ink {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--primary);
+        color: var(--primary-foreground);
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 10px;
+        height: 26px;
+        padding: 0 22px;
+        transition: opacity 0.3s, background-color 0.3s;
+      }
+      .btn-ink:hover { opacity: 0.85; }
+
+      @keyframes heroFade {
+        0%, 100% { opacity: 0; }
+        4%, 20% { opacity: 1; }
+        24% { opacity: 0; }
+      }
+      .hero-slide {
+        animation: heroFade 25s infinite;
+        opacity: 0;
+      }
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: none; }
+      }
+      .reveal {
+        opacity: 0;
+      }
+      .reveal.in {
+        animation: rise 1s ease forwards;
+      }
+
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+    </style>
+
+    <!-- CENTRAL MEDIA CONFIGURATION: Edit media-config.js to change photos & videos anytime -->
+    <script src="media-config.js"></script>
+  </head>
+  <body class="overflow-x-hidden bg-cream">
+    <!-- STICKY HEADER -->
+    <header id="sticky-header" class="fixed inset-x-0 top-0 z-40 h-[50px] bg-background/95 backdrop-blur-sm border-b border-border/50 transition-transform duration-500 -translate-y-full">
+      <div class="mx-auto flex h-full max-w-[1280px] items-center justify-between px-[30px]">
+        <a href="#hero" class="font-display text-[15px] md:text-[17px] tracking-[0.18em] text-foreground uppercase font-medium hover:opacity-75 transition-opacity">
+          <span class="font-bold">RB</span> Photography
+        </a>
+        <nav class="hidden gap-8 md:flex">
+          <a href="#work" class="eyebrow text-[10px] text-muted-foreground transition-colors hover:text-foreground">WORK</a>
+          <a href="#about" class="eyebrow text-[10px] text-muted-foreground transition-colors hover:text-foreground">ABOUT</a>
+          <a href="#experience" class="eyebrow text-[10px] text-muted-foreground transition-colors hover:text-foreground">EXPERIENCE</a>
+          <a href="#faq" class="eyebrow text-[10px] text-muted-foreground transition-colors hover:text-foreground">QUESTIONS</a>
+          <a href="#contact" class="eyebrow text-[10px] text-muted-foreground transition-colors hover:text-foreground">CONTACT</a>
+        </nav>
+        <a href="#contact" class="btn-ink !h-[28px] px-5 !text-[10px]">GET IN TOUCH</a>
+      </div>
+    </header>
+
+    <!-- FULLSCREEN MODAL MENU -->
+    <div id="nav-menu" class="fixed inset-0 z-50 flex bg-ink text-ink-foreground transition-opacity duration-500 pointer-events-none opacity-0">
+      <button id="close-menu" aria-label="Close menu" class="absolute right-8 top-6 font-display text-3xl cursor-pointer hover:opacity-70 transition-opacity">×</button>
+      <div class="m-auto flex flex-col items-center gap-6">
+        <span class="eyebrow mb-2 opacity-60 text-[10px] tracking-[0.3em]">RB PHOTOGRAPHY · PATRAS, GREECE</span>
+        <a href="#hero" class="menu-link h-caps text-3xl transition-opacity hover:opacity-60 md:text-5xl">HOME</a>
+        <a href="#work" class="menu-link h-caps text-3xl transition-opacity hover:opacity-60 md:text-5xl">WORK</a>
+        <a href="#about" class="menu-link h-caps text-3xl transition-opacity hover:opacity-60 md:text-5xl">ABOUT</a>
+        <a href="#experience" class="menu-link h-caps text-3xl transition-opacity hover:opacity-60 md:text-5xl">EXPERIENCE</a>
+        <a href="#faq" class="menu-link h-caps text-3xl transition-opacity hover:opacity-60 md:text-5xl">QUESTIONS</a>
+        <a href="#contact" class="menu-link h-caps text-3xl transition-opacity hover:opacity-60 md:text-5xl">CONTACT</a>
+        <a href="mailto:babas.rami@gmail.com" class="menu-link mt-4 font-display text-2xl italic font-light opacity-80 hover:opacity-100 transition-opacity">get in touch</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="relative h-screen min-h-[620px] overflow-hidden bg-ink">
+        <img id="hero-slide-0" src="https://res.cloudinary.com/rar7lstj/image/upload/IMG_20261006_161214.jpg" alt="RB Photography hero 1" class="hero-slide absolute inset-0 h-full w-full object-cover" style="animation-delay: 0s" />
+        <img id="hero-slide-1" src="https://res.cloudinary.com/rar7lstj/image/upload/1.jpg" alt="RB Photography hero 2" class="hero-slide absolute inset-0 h-full w-full object-cover" style="animation-delay: 5s" />
+        <img id="hero-slide-2" src="https://res.cloudinary.com/rar7lstj/image/upload/hero2.jpg" alt="RB Photography hero 3" class="hero-slide absolute inset-0 h-full w-full object-cover" style="animation-delay: 10s" />
+        <img id="hero-slide-3" src="https://res.cloudinary.com/rar7lstj/image/upload/IMG_20261006_161214.jpg" alt="RB Photography hero 4" class="hero-slide absolute inset-0 h-full w-full object-cover" style="animation-delay: 15s" />
+        <img id="hero-slide-4" src="https://res.cloudinary.com/rar7lstj/image/upload/1.jpg" alt="RB Photography hero 5" class="hero-slide absolute inset-0 h-full w-full object-cover" style="animation-delay: 20s" />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/35 to-ink/25"></div>
+
+        <button id="open-menu" aria-label="Open menu" class="absolute right-[34px] top-[44px] z-10 flex flex-col items-center gap-[4px] text-ink-foreground cursor-pointer hover:opacity-80 transition-opacity">
+          <span class="block h-px w-[34px] bg-ink-foreground"></span>
+          <span class="block h-px w-[34px] bg-ink-foreground"></span>
+          <span class="block h-px w-[34px] bg-ink-foreground"></span>
+          <span class="eyebrow mt-8 text-[11px] [writing-mode:vertical-rl] tracking-[0.25em]">navigate</span>
+        </button>
+
+        <div class="absolute bottom-[6vh] left-[24px] md:left-[50px] max-w-[880px] text-ink-foreground z-10 pr-6">
+          <p class="eyebrow mb-3 text-[11px] tracking-[0.25em] text-ink-foreground/80">RB Photography · Patras, Greece</p>
+          <h1 class="font-display text-[clamp(36px,5.8vw,80px)] uppercase leading-[0.98] tracking-[0.06em] text-ink-foreground">
+            Light, patience,<br />and the frame<br />in between.
+          </h1>
+          <p class="mt-4 max-w-[540px] text-[13px] md:text-[14px] leading-relaxed text-ink-foreground/85 font-light tracking-[0.03em]">
+            Weddings, portraits, wild places and architecture, photographed by Rami Babas. Available to travel.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <a href="#work" class="btn-ink !h-[36px] px-6 !text-[10px] tracking-[0.18em]">Open the work</a>
+            <a href="#contact" class="btn-ink !h-[36px] px-6 !bg-transparent border border-ink-foreground/40 !text-ink-foreground hover:!bg-ink-foreground/15 !text-[10px] tracking-[0.18em]">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHAT I PHOTOGRAPH / COLLAGE -->
+      <section id="work" class="relative mx-auto h-[2980px] max-w-[1280px]">
+        <img id="collage-0" src="https://res.cloudinary.com/rar7lstj/image/upload/RAM_2429.jpg" class="reveal object-cover absolute left-[118px] top-[87px] h-[523px] w-[584px]" alt="Weddings & couples" loading="lazy" />
+        <img id="collage-1" src="https://res.cloudinary.com/rar7lstj/image/upload/RAM_2704.jpg" class="reveal object-cover absolute left-[578px] top-[218px] h-[741px] w-[584px]" alt="Portrait photography" loading="lazy" />
+        <img id="collage-2" src="https://res.cloudinary.com/rar7lstj/image/upload/RAM_1279.jpg" class="reveal object-cover absolute -left-[111px] top-[897px] h-[741px] w-[584px]" alt="Authentic moments" loading="lazy" />
+        
+        <!-- EDITORIAL CARD: What I photograph -->
+        <div class="reveal absolute left-[640px] top-[1060px] w-[520px]">
+          <h2 class="eyebrow text-[13px] text-foreground tracking-[0.2em]">What I photograph</h2>
+          <p class="h-caps mt-2 text-[28px] leading-snug">Full days, told in order. Wild places and unhurried people.</p>
+          
+          <div class="mt-6 grid grid-cols-2 gap-4 text-[12px]">
+            <div class="border-t border-border/80 pt-3">
+              <span class="eyebrow text-[10px] text-muted-foreground block mb-1">01</span>
+              <h3 class="font-display font-medium text-[15px] uppercase">Weddings &amp; couples</h3>
+              <p class="text-muted-foreground text-[11px] mt-1 leading-snug">Full days, told in order. 7 photographs.</p>
+            </div>
+            <div class="border-t border-border/80 pt-3">
+              <span class="eyebrow text-[10px] text-muted-foreground block mb-1">02</span>
+              <h3 class="font-display font-medium text-[15px] uppercase">Portraits</h3>
+              <p class="text-muted-foreground text-[11px] mt-1 leading-snug">People, close and unhurried. 4 photographs.</p>
+            </div>
+            <div class="border-t border-border/80 pt-3">
+              <span class="eyebrow text-[10px] text-muted-foreground block mb-1">03</span>
+              <h3 class="font-display font-medium text-[15px] uppercase">Nature</h3>
+              <p class="text-muted-foreground text-[11px] mt-1 leading-snug">Wild places, unstaged. 28 photographs.</p>
+            </div>
+            <div class="border-t border-border/80 pt-3">
+              <span class="eyebrow text-[10px] text-muted-foreground block mb-1">04</span>
+              <h3 class="font-display font-medium text-[15px] uppercase">Architecture</h3>
+              <p class="text-muted-foreground text-[11px] mt-1 leading-snug">Lines, light, and structure. 24 photographs.</p>
+            </div>
+          </div>
+
+          <a href="#about" class="btn-ink mt-7 !h-[40px] w-[186px] !text-[11px]">Behind the camera</a>
+        </div>
+
+        <img id="collage-3" src="https://static.showit.co/400/GGFmQcrYOP1vQLyAQx7NVA/245374/miller-wedding-featured-0168.jpg" class="reveal object-cover absolute left-[659px] top-[1480px] h-[238px] w-[335px]" alt="Wedding detail" loading="lazy" />
+        <img id="collage-4" src="https://res.cloudinary.com/rar7lstj/image/upload/rwetwt.jpg" class="reveal object-cover absolute left-[309px] top-[1888px] h-[659px] w-[493px]" alt="Portraits in nature" loading="lazy" />
+        <img id="collage-5" src="https://res.cloudinary.com/rar7lstj/image/upload/23523532.jpg" class="reveal object-cover absolute left-[934px] top-[2101px] h-[431px] w-[354px]" alt="Editorial portrait" loading="lazy" />
+        <img id="collage-6" src="https://res.cloudinary.com/rar7lstj/image/upload/qeqweqw.jpg" class="reveal object-cover absolute -left-[295px] top-[2411px] h-[659px] w-[493px]" alt="Story moment" loading="lazy" />
+        <img id="collage-7" src="https://static.showit.co/400/ctnKdS21TVCwDLKFuFlASA/245374/contact-sheet-square.jpg" class="reveal object-cover absolute left-[435px] top-[2651px] h-[812px] w-[279px] z-10" alt="Film contact strip" loading="lazy" />
+        <img id="collage-8" src="https://res.cloudinary.com/rar7lstj/image/upload/RAM_5434.jpg" class="reveal object-cover absolute left-[846px] top-[2690px] h-[427px] w-[590px]" alt="Natural celebration" loading="lazy" />
+      </section>
+
+      <!-- 10-IMAGE PHOTO GRID -->
+      <section class="relative z-0 mt-[273px] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-0">
+        <img id="grid-0" src="https://static.showit.co/800/ljSTew8vTdyjX51XTsrCAQ/245374/pentax67-p400-california-0054.jpg" alt="RB Photography portfolio 1" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-1" src="https://static.showit.co/800/AFkkDcSVQx4hbILdgF1GfQ/245374/degitz-wedding-film-0074.jpg" alt="RB Photography portfolio 2" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-2" src="https://static.showit.co/800/-qBolNMuSyiZIE6yLxN7SQ/245374/3004302-r1-e011.jpg" alt="RB Photography portfolio 3" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-3" src="https://static.showit.co/800/YT8ktoJFyZ7uNBqI8zNheg/245374/rushton-wedding-6486.jpg" alt="RB Photography portfolio 4" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-4" src="https://static.showit.co/800/hZKXaKoVTlaSff8N0beZ0A/245374/fay-wedding-0775.jpg" alt="RB Photography portfolio 5" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-5" src="https://static.showit.co/800/Cqw_XJWy1KOR14dtW_B9GA/245374/roll-wedding-0261.jpg" alt="RB Photography portfolio 6" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-6" src="https://static.showit.co/800/vUrajhVZNHLTTSWA6p3lTg/245374/trotter-slideshow-0105.jpg" alt="RB Photography portfolio 7" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-7" src="https://static.showit.co/800/ZqYq2xqpqxovmfpP-ag9Pw/245374/miller-wedding-featured-0161.jpg" alt="RB Photography portfolio 8" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-8" src="https://static.showit.co/800/Trsc5jKFTUW8GKKqfQzabQ/245374/miller-wedding-featured-0080.jpg" alt="RB Photography portfolio 9" loading="lazy" class="aspect-square w-full object-cover" />
+        <img id="grid-9" src="https://static.showit.co/800/F8vZBrMvwsrjruKpg78uvQ/245374/kostas-wedding-film-1141-small.jpg" alt="RB Photography portfolio 10" loading="lazy" class="aspect-square w-full object-cover" />
+      </section>
+
+      <!-- EDITORIAL APERTURE / CAMERA STRIP -->
+      <section class="bg-sand py-7 border-y border-border">
+        <div class="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-6 px-8">
+          <div class="flex items-center gap-4">
+            <span class="eyebrow text-[12px] font-semibold tracking-[0.2em] text-foreground">RB PHOTOGRAPHY</span>
+            <span class="text-muted-foreground/60 hidden sm:inline">·</span>
+            <span class="eyebrow text-[11px] text-muted-foreground hidden sm:inline">PATRAS, GREECE</span>
+          </div>
+          <div class="flex items-center gap-6 text-[12px] text-muted-foreground font-mono tracking-widest">
+            <span>f/1.4</span>
+            <span>f/2</span>
+            <span>f/2.8</span>
+            <span>f/4</span>
+            <span>f/5.6</span>
+            <span>f/8</span>
+          </div>
+          <div class="eyebrow text-[10px] tracking-[0.2em] text-foreground/80">
+            WEDDINGS · PORTRAITS · NATURE · ARCHITECTURE
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT (BEHIND THE CAMERA) -->
+      <section id="about" class="mx-auto grid max-w-[1280px] items-center gap-12 px-8 py-[140px] md:grid-cols-[457px_1fr] md:pl-[149px]">
+        <img id="about-img" src="https://res.cloudinary.com/rar7lstj/image/upload/me.png" class="reveal object-cover h-[561px] w-[457px]" alt="Rami Babas · RB Photography" loading="lazy" />
+        <div class="reveal max-w-[500px]">
+          <h2 class="eyebrow text-[14px] text-muted-foreground">Behind the camera</h2>
+          <p class="h-caps mt-3 text-[30px] leading-tight">Every scene holds a feeling before it is ever captured</p>
+          
+          <div class="mt-5 space-y-4 text-[13px] leading-[1.95] tracking-[0.04em] text-foreground/90">
+            <p>
+              As a kid, I was always captivated by photos—looking at them for hours, examining every detail, and asking myself: what if we changed the pose, the color, or the position of something in the frame? How would it look? I always wondered how the whole scene truly looked in reality before it was captured and put on a frame, physically or digitally.
+            </p>
+            <p>
+              That deep admiration grew into a commitment to save every moment and scene I encountered, turning fleeting life into a physical memory not just held in mind. I started photography as a childhood hobby and learned brick by brick how to observe light, how to capture natural authenticity, and how to make it look better in real life before any edit.
+            </p>
+            <p>
+              That's how my journey started, and I found my comfort and purpose in it—a craft I love and plan to continue doing forever. Today, I shoot as <b>RB Photography</b>, working across wedding days, landscape and nature work, architecture, and portraits. Every set starts the same way: I show up early and stay until the light is gone. Based in Patras, Greece, and available to travel worldwide.
+            </p>
+          </div>
+
+          <a href="#contact" class="btn-ink mt-7 !h-[40px] w-[186px] !text-[11px]">Get in touch</a>
+        </div>
+      </section>
+
+      <!-- QUOTE + PORTFOLIO -->
+      <section class="relative">
+        <div class="relative z-10 mx-auto w-[680px] max-w-[92%] bg-quote px-10 py-7 text-center text-ink-foreground shadow-lg">
+          <p class="font-display text-[26px] md:text-[28px] font-light italic leading-tight">"Light, patience, and the frame in between."</p>
+          <h2 class="eyebrow mt-3 text-[10px] tracking-[0.25em]">RAMI BABAS · RB PHOTOGRAPHY</h2>
+        </div>
+        <div class="-mt-[74px] bg-sand pt-[220px]">
+          <h2 class="text-center font-display text-[clamp(54px,11vw,140px)] uppercase leading-none tracking-[0.08em]">selected work</h2>
+        </div>
+        <div class="relative mx-auto -mt-[30px] h-[1000px] max-w-[1280px] [background:linear-gradient(var(--sand)_0_280px,var(--cream)_280px)]">
+          <img id="portfolio-0" src="https://res.cloudinary.com/rar7lstj/image/upload/RAM_5624bw.jpg" class="reveal object-cover absolute -left-[179px] top-[49px] h-[592px] w-[436px]" alt="Series 1" loading="lazy" />
+          <img id="portfolio-1" src="https://res.cloudinary.com/rar7lstj/image/upload/pl.jpg" class="reveal object-cover absolute left-[316px] top-0 h-[804px] w-[652px]" alt="Series 2" loading="lazy" />
+          <img id="portfolio-2" src="https://res.cloudinary.com/rar7lstj/image/upload/RAM_3644.jpg" class="reveal object-cover absolute left-[1027px] top-[49px] h-[592px] w-[436px]" alt="Series 3" loading="lazy" />
+          <a href="#work" class="btn-ink absolute bottom-[60px] left-1/2 !h-[63px] w-[384px] max-w-[90%] -translate-x-1/2 !text-[16px] md:!text-[18px] font-semibold">VIEW THE SERIES</a>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="relative mx-auto grid max-w-[1280px] gap-16 px-8 py-[100px] md:grid-cols-[600px_1fr]">
+        <div class="relative">
+          <h2 class="absolute -left-2 top-0 font-display text-[54px] md:text-[60px] uppercase leading-none tracking-[0.12em] text-blush [writing-mode:vertical-rl] rotate-180">From Our Clients</h2>
+          <img id="testimonial-img" src="https://res.cloudinary.com/rar7lstj/image/upload/plbw.jpg" class="ml-[70px] md:ml-[87px] h-[632px] w-[512px] object-cover" alt="Client memories" />
+        </div>
+        <div class="flex flex-col justify-center">
+          <p id="testimonial-text" class="reveal in font-display text-[24px] md:text-[26px] leading-[1.3] text-foreground">
+            “Rami has an extraordinary eye for the quiet, honest moments. At our wedding, he moved seamlessly through every scene without ever forcing a pose, yet capturing pure magic. Looking back at our photos brings tears of joy every single time.”
+          </p>
+          <div id="testimonial-buttons" class="mt-14 flex flex-col gap-4">
+            <button data-index="0" class="text-left text-[18px] md:text-[20px] font-medium uppercase tracking-wide transition-colors text-foreground cursor-pointer">AMIRA &amp; KARIM (WEDDING)</button>
+            <button data-index="1" class="text-left text-[18px] md:text-[20px] font-medium uppercase tracking-wide transition-colors text-muted-foreground/70 hover:text-foreground cursor-pointer">RESORT GUESTS (MITSIS HOTELS)</button>
+            <button data-index="2" class="text-left text-[18px] md:text-[20px] font-medium uppercase tracking-wide transition-colors text-muted-foreground/70 hover:text-foreground cursor-pointer">SARAH &amp; YACINE (FULL DAY)</button>
+            <button data-index="3" class="text-left text-[18px] md:text-[20px] font-medium uppercase tracking-wide transition-colors text-muted-foreground/70 hover:text-foreground cursor-pointer">COMMISSION &amp; ARCHITECTURE</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOSTALGIA / HONEST LIGHT -->
+      <section class="bg-ink py-[80px] text-ink-foreground">
+        <div class="mx-auto grid max-w-[1280px] items-center gap-12 px-8 md:grid-cols-[1fr_697px]">
+          <div class="reveal md:pl-[110px]">
+            <h2 class="h-caps text-[34px] md:text-[38px] leading-[1.15]">Unrushed moments,<br />framed with <em class="font-light italic">soul &amp; light</em></h2>
+            <h2 class="eyebrow mt-4 text-[13px] md:text-[14px] leading-relaxed text-ink-foreground/80">saving every scene into physical memory<br />before editing, true to life</h2>
+            <a href="#work" class="btn-ink mt-7 !h-[40px] w-[186px] !bg-blush/40 !text-[11px]">Selected work</a>
+          </div>
+          <img id="nostalgia-img" src="https://static.showit.co/800/wh2tXif8TwiT5ND0V7TTGw/245374/contact-sheet-tri-x-annie.jpg" class="reveal object-cover h-[710px] w-full" alt="Film contact sheet" loading="lazy" />
+        </div>
+      </section>
+
+      <!-- PHYSICAL MEMORIES / HEIRLOOMS -->
+      <section class="relative mx-auto h-[1100px] max-w-[1280px] bg-sand [box-shadow:0_0_0_100vmax_var(--sand)] [clip-path:inset(0_-100vmax)]">
+        <img id="heirloom-0" src="https://static.showit.co/400/ZwC2TgBDRe2Fs51o16HCPg/shared/3004295-r1-e004.jpg" class="reveal object-cover absolute left-[752px] top-[40px] h-[276px] w-[245px]" alt="Heirloom photo 1" loading="lazy" />
+        <img id="heirloom-1" src="https://static.showit.co/400/u9jt5-VWQyKIdHM130VaHw/shared/hickswedding-delta-p67-0493.jpg" class="reveal object-cover absolute left-[903px] top-[151px] h-[218px] w-[205px]" alt="Heirloom photo 2" loading="lazy" />
+        <img id="heirloom-2" src="https://static.showit.co/800/5Pfn_PUMzHLkI5RgS7ty1Q/245374/dscf8461.jpg" class="reveal object-cover absolute -left-[122px] top-[166px] h-[561px] w-[457px]" alt="Heirloom photo 3" loading="lazy" />
+        <div class="reveal absolute left-[430px] top-[340px] w-[420px] text-center">
+          <h2 class="eyebrow text-[14px]">Physical memories</h2>
+          <p class="h-caps mt-3 text-[30px]">A physical memory, not only in the mind</p>
+          <p class="mt-5 text-[13px] leading-[2] tracking-[0.05em] text-foreground/85">
+            Photographs belong off screens and into real life. Preserving your story through fine-art archival prints and bespoke albums that can be held in hands, passed down, and kept forever ♾️.
+          </p>
+        </div>
+        <img id="heirloom-3" src="https://static.showit.co/800/1DC3iQJLSF-GB82D3z3xLA/shared/386112427_1386859642183418_4639392566103905489_nfull.jpg" class="reveal object-cover absolute left-[920px] top-[458px] h-[376px] w-[529px]" alt="Heirloom photo 4" loading="lazy" />
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="relative">
+        <img id="experience-banner" src="https://static.showit.co/1600/lgL5CFq-Ry27s3gtf8pmTQ/shared/mamiya7-p800-ny-0275.jpg" alt="Experience banner" class="h-[490px] w-full object-cover" loading="lazy" />
+        <div class="relative mx-auto h-[1050px] max-w-[1280px]">
+          <img id="experience-left" src="https://res.cloudinary.com/rar7lstj/image/upload/old.jpg" class="reveal object-cover absolute left-[111px] -top-[204px] h-[561px] w-[457px]" alt="Wedding ceremony prep" loading="lazy" />
+          
+          <div class="reveal absolute left-[598px] top-[170px] w-[500px]">
+            <h2 class="eyebrow text-[14px]">The RB Photography Experience</h2>
+            <p class="h-caps mt-3 text-[28px] md:text-[30px]">Show up early. Stay until the light is gone.</p>
+          </div>
+          
+          <img id="experience-center" src="https://res.cloudinary.com/rar7lstj/image/upload/88888.jpg" class="reveal object-cover absolute left-[249px] top-[398px] h-[398px] w-[597px] border-[6px] border-ink" alt="Couple by the sea" loading="lazy" />
+          
+          <div class="reveal absolute left-[887px] top-[300px] w-[280px]">
+            <div class="space-y-4 text-[12px] leading-[1.85] tracking-[0.04em] text-foreground/90">
+              <div class="border-b border-border/80 pb-3">
+                <span class="eyebrow text-[10px] font-bold text-primary block">2026 · PHOTOGRAPHER</span>
+                <p class="font-medium mt-0.5">Pixel Holidays at Mitsis Hotels, Greece</p>
+                <p class="text-[11px] text-muted-foreground mt-0.5">Guest and resort photography through the summer season.</p>
+              </div>
+              <div class="border-b border-border/80 pb-3">
+                <span class="eyebrow text-[10px] font-bold text-primary block">2022–2023 · WEDDING PHOTOGRAPHER</span>
+                <p class="font-medium mt-0.5">Ochen Salle des Fêtes, Sétif</p>
+                <p class="text-[11px] text-muted-foreground mt-0.5">Full wedding-day coverage, from preparations through to the reception.</p>
+              </div>
+              <div class="pb-1">
+                <span class="eyebrow text-[10px] font-bold text-primary block">2017–2019 · EVENT PHOTOGRAPHY</span>
+                <p class="font-medium mt-0.5">Volunteer Celebrations</p>
+                <p class="text-[11px] text-muted-foreground mt-0.5">Where I learned to work a room and stay out of the way at the same time.</p>
+              </div>
+            </div>
+            <a href="#contact" class="btn-ink mt-6 !h-[40px] w-[186px] !text-[11px]">Book a shoot</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUESTIONS / FAQ (GOOD TO KNOW) -->
+      <section id="faq" class="bg-sand py-24 border-t border-border">
+        <div class="mx-auto max-w-[960px] px-8">
+          <div class="text-center mb-14">
+            <span class="eyebrow text-[12px] text-muted-foreground tracking-[0.25em]">Good to know</span>
+            <h2 class="h-caps text-[36px] md:text-[42px] mt-2">Questions &amp; Details</h2>
+          </div>
+
+          <div class="space-y-4">
+            <details class="group bg-background border border-border p-6 transition-all duration-300 open:shadow-sm" open>
+              <summary class="flex justify-between items-center cursor-pointer list-none">
+                <h3 class="font-display text-[19px] md:text-[21px] text-foreground group-open:text-primary">Where are you based?</h3>
+                <span class="text-xl text-muted-foreground transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-[13px] leading-relaxed text-foreground/85 border-t border-border/60 pt-4">
+                Patras, Greece. I am based in Greece and available to travel for weddings, portraits, and commissions worldwide.
+              </p>
+            </details>
+
+            <details class="group bg-background border border-border p-6 transition-all duration-300 open:shadow-sm">
+              <summary class="flex justify-between items-center cursor-pointer list-none">
+                <h3 class="font-display text-[19px] md:text-[21px] text-foreground group-open:text-primary">What do you photograph?</h3>
+                <span class="text-xl text-muted-foreground transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-[13px] leading-relaxed text-foreground/85 border-t border-border/60 pt-4">
+                Weddings and couples, unhurried portraits, wild nature &amp; landscapes, and architecture.
+              </p>
+            </details>
+
+            <details class="group bg-background border border-border p-6 transition-all duration-300 open:shadow-sm">
+              <summary class="flex justify-between items-center cursor-pointer list-none">
+                <h3 class="font-display text-[19px] md:text-[21px] text-foreground group-open:text-primary">Have you photographed full wedding days?</h3>
+                <span class="text-xl text-muted-foreground transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-[13px] leading-relaxed text-foreground/85 border-t border-border/60 pt-4">
+                Yes. I covered full wedding days from preparations to the reception at Ochen Salle des Fêtes in Sétif, Algeria, in 2022 and 2023, along with event photography since 2017.
+              </p>
+            </details>
+
+            <details class="group bg-background border border-border p-6 transition-all duration-300 open:shadow-sm">
+              <summary class="flex justify-between items-center cursor-pointer list-none">
+                <h3 class="font-display text-[19px] md:text-[21px] text-foreground group-open:text-primary">How do I book a shoot?</h3>
+                <span class="text-xl text-muted-foreground transition-transform duration-300 group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-4 text-[13px] leading-relaxed text-foreground/85 border-t border-border/60 pt-4">
+                Email me at <a href="mailto:babas.rami@gmail.com" class="underline font-medium text-foreground">babas.rami@gmail.com</a> or message me on Instagram <a href="https://instagram.com/r_0005_r" target="_blank" rel="noopener noreferrer" class="underline font-medium text-foreground">@r_0005_r</a>. Tell me what you're planning and when!
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- INQUIRE / CONTACT WITH BACKGROUND VIDEO -->
+      <section id="contact" class="relative flex min-h-[720px] md:h-[900px] items-center justify-center overflow-hidden text-ink-foreground py-20">
+        <video id="contact-video" poster="https://res.cloudinary.com/rar7lstj/image/upload/sasas.jpg" autoplay muted loop playsinline class="absolute inset-0 h-full w-full object-cover"></video>
+        <div class="absolute inset-0 bg-ink/50 backdrop-blur-[2px]"></div>
+
+        <div class="relative z-10 max-w-[620px] px-6 text-center">
+          <span class="eyebrow text-[11px] tracking-[0.3em] text-ink-foreground/80 block mb-3">GET IN TOUCH</span>
+          <h2 class="h-caps text-[36px] md:text-[42px] font-normal leading-tight">Let's talk about your day</h2>
+          <p class="mt-4 text-[13px] md:text-[14px] leading-[1.9] tracking-[0.05em] text-ink-foreground/90">
+            Weddings, portrait sessions, or a building worth photographing properly. Based in Patras, Greece — available to travel worldwide.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="mailto:babas.rami@gmail.com" class="btn-ink !h-[42px] px-7 !bg-blush !text-[11px] !text-foreground font-semibold hover:opacity-90">EMAIL ME</a>
+            <a href="https://instagram.com/r_0005_r" target="_blank" rel="noopener noreferrer" class="btn-ink !h-[42px] px-7 !bg-transparent border border-ink-foreground/60 !text-ink-foreground hover:!bg-ink-foreground/15 !text-[11px] font-semibold">INSTAGRAM @R_0005_R</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="bg-ink px-[30px] pb-8 pt-24 text-ink-foreground border-t border-ink-foreground/10">
+        <div class="mx-auto grid max-w-[1280px] items-center gap-12 md:grid-cols-3">
+          <div>
+            <a href="#hero" class="font-display text-[22px] tracking-[0.18em] text-ink-foreground uppercase font-medium">
+              <span class="font-bold">RB</span> Photography
+            </a>
+            <p class="h-caps mt-4 text-[15px] font-normal leading-snug opacity-90">
+              Wedding, portrait, nature and architecture photography.<br />Patras, Greece. Available to travel.
+            </p>
+            <a href="mailto:babas.rami@gmail.com" class="eyebrow mt-6 block text-[10px] text-ink-foreground/80 hover:text-ink-foreground transition-colors">
+              babas.rami@gmail.com
+            </a>
+            <div class="mt-4 flex gap-4 text-[12px]">
+              <a href="https://instagram.com/r_0005_r" target="_blank" rel="noopener noreferrer" class="eyebrow text-[10px] underline text-ink-foreground/80 hover:text-ink-foreground">Instagram @r_0005_r</a>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <p class="font-display text-[26px] font-light italic leading-[1]">let's capture a</p>
+            <h2 class="h-caps mt-1 text-[26px] md:text-[28px] font-normal tracking-[0.2em]">physical memory</h2>
+            <div class="mt-4 flex justify-center gap-[10px]">
+              <img id="footer-photo-0" src="https://static.showit.co/200/to2yMKjsRLea8z7-Fzh-LA/shared/1012968-r1-033-15.jpg" alt="Footer photo 1" class="h-[143px] w-[114px] object-cover" loading="lazy" />
+              <img id="footer-photo-1" src="https://static.showit.co/400/RqM2xJN0Tm62TkYJ8J9lgQ/shared/basha-slideshow-0120.jpg" alt="Footer photo 2" class="h-[143px] w-[114px] object-cover" loading="lazy" />
+              <img id="footer-photo-2" src="https://static.showit.co/400/SPMUpo75TzabfzncZtmLUw/shared/leica-p800-mckinley-0181.jpg" alt="Footer photo 3" class="h-[143px] w-[114px] object-cover" loading="lazy" />
+            </div>
+            <a href="mailto:babas.rami@gmail.com" class="btn-ink mt-8 !h-[42px] px-8 !bg-blush !text-[11px] !text-foreground font-semibold hover:opacity-90">GET IN TOUCH</a>
+          </div>
+
+          <div class="text-right">
+            <h2 class="h-caps mr-1 text-[18px] font-normal tracking-[0.2em]">explore</h2>
+            <div class="mt-4 ml-auto grid w-fit grid-cols-2 gap-x-6 gap-y-3 text-[10px] eyebrow">
+              <a href="#hero" class="hover:text-ink-foreground/70 transition-colors">home</a>
+              <a href="#work" class="hover:text-ink-foreground/70 transition-colors">work</a>
+              <a href="#about" class="hover:text-ink-foreground/70 transition-colors">about</a>
+              <a href="#experience" class="hover:text-ink-foreground/70 transition-colors">experience</a>
+              <a href="#faq" class="hover:text-ink-foreground/70 transition-colors">questions</a>
+              <a href="#contact" class="hover:text-ink-foreground/70 transition-colors">contact</a>
+            </div>
+          </div>
+        </div>
+        <p class="eyebrow mt-16 text-center md:text-left text-[9px] opacity-70">
+          © 2026 RB Photography · Rami Babas · All Rights Reserved
+        </p>
+      </footer>
+    </main>
+
+    <script>
+      // -------------------------------------------------------------
+      // Dynamic Media Binder from media-config.js
+      // -------------------------------------------------------------
+      function applyConfiguredMedia() {
+        if (!window.SITE_MEDIA) return;
+        const m = window.SITE_MEDIA;
+
+        // Hero slides
+        if (Array.isArray(m.heroSlides) && m.heroSlides.length > 0) {
+          for (let i = 0; i < 5; i++) {
+            const el = document.getElementById("hero-slide-" + i);
+            if (el) {
+              const src = m.heroSlides[i % m.heroSlides.length];
+              if (src) el.src = src;
+            }
+          }
+        }
+
+        // Collage photos
+        if (Array.isArray(m.collage)) {
+          m.collage.forEach((src, i) => {
+            const el = document.getElementById("collage-" + i);
+            if (el && src) el.src = src;
+          });
+        }
+
+        // Grid photos
+        if (Array.isArray(m.grid)) {
+          m.grid.forEach((src, i) => {
+            const el = document.getElementById("grid-" + i);
+            if (el && src) el.src = src;
+          });
+        }
+
+        // About photo
+        if (m.about) {
+          const el = document.getElementById("about-img");
+          if (el) el.src = m.about;
+        }
+
+        // Portfolio trio
+        if (Array.isArray(m.portfolio)) {
+          m.portfolio.forEach((src, i) => {
+            const el = document.getElementById("portfolio-" + i);
+            if (el && src) el.src = src;
+          });
+        }
+
+        // Testimonial photo
+        if (m.testimonial) {
+          const el = document.getElementById("testimonial-img");
+          if (el) el.src = m.testimonial;
+        }
+
+        // Nostalgia banner
+        if (m.nostalgia) {
+          const el = document.getElementById("nostalgia-img");
+          if (el) el.src = m.nostalgia;
+        }
+
+        // Heirlooms
+        if (Array.isArray(m.heirlooms)) {
+          m.heirlooms.forEach((src, i) => {
+            const el = document.getElementById("heirloom-" + i);
+            if (el && src) el.src = src;
+          });
+        }
+
+        // Experience section
+        if (m.experience) {
+          const banner = document.getElementById("experience-banner");
+          if (banner && m.experience.banner) banner.src = m.experience.banner;
+          const left = document.getElementById("experience-left");
+          if (left && m.experience.left) left.src = m.experience.left;
+          const center = document.getElementById("experience-center");
+          if (center && m.experience.center) center.src = m.experience.center;
+        }
+
+        // Contact video & poster
+        if (m.videoSection) {
+          const video = document.getElementById("contact-video");
+          if (video) {
+            const src = m.videoSection.videoSrc || "";
+            const isImg = /\.(jpe?g|png|webp|gif|svg|avif)(\?.*)?$/i.test(src);
+            if (isImg) {
+              video.poster = src;
+              video.removeAttribute("src");
+            } else if (src) {
+              video.src = src;
+              if (m.videoSection.poster) video.poster = m.videoSection.poster;
+            } else if (m.videoSection.poster) {
+              video.poster = m.videoSection.poster;
+            }
+          }
+        }
+
+        // Footer photos
+        if (Array.isArray(m.footerPhotos)) {
+          m.footerPhotos.forEach((src, i) => {
+            const el = document.getElementById("footer-photo-" + i);
+            if (el && src) el.src = src;
+          });
+        }
+      }
+
+      applyConfiguredMedia();
+
+      // Sticky header on scroll past 80vh
+      const header = document.getElementById("sticky-header");
+      function onScroll() {
+        if (window.scrollY > window.innerHeight * 0.8) {
+          header.classList.remove("-translate-y-full");
+          header.classList.add("translate-y-0");
+        } else {
+          header.classList.remove("translate-y-0");
+          header.classList.add("-translate-y-full");
+        }
+      }
+      window.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      // Fullscreen navigation menu toggle
+      const menu = document.getElementById("nav-menu");
+      const openBtn = document.getElementById("open-menu");
+      const closeBtn = document.getElementById("close-menu");
+      const menuLinks = document.querySelectorAll(".menu-link");
+
+      function openMenu() {
+        menu.classList.remove("pointer-events-none", "opacity-0");
+        menu.classList.add("opacity-100");
+      }
+      function closeMenu() {
+        menu.classList.remove("opacity-100");
+        menu.classList.add("pointer-events-none", "opacity-0");
+      }
+
+      if (openBtn) openBtn.addEventListener("click", openMenu);
+      if (closeBtn) closeBtn.addEventListener("click", closeMenu);
+      menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+      // Testimonial interactive switcher
+      const testimonials = [
+        {
+          name: "AMIRA & KARIM (WEDDING)",
+          text: "\u201CRami has an extraordinary eye for the quiet, honest moments. At our wedding, he moved seamlessly through every scene without ever forcing a pose, yet capturing pure magic. Looking back at our photos brings tears of joy every single time.\u201D",
+        },
+        {
+          name: "RESORT GUESTS (MITSIS HOTELS)",
+          text: "\u201CBeyond being an exceptionally skilled photographer, the warmth and patience Rami brought to our sessions in Greece was unforgettable. He made everyone feel natural and comfortable in front of the lens.\u201D",
+        },
+        {
+          name: "SARAH & YACINE (FULL DAY)",
+          text: "\u201CFrom early morning preparations all the way into the late reception, Rami was dedicated, calm, and immensely creative. The lighting and emotion in every photograph are truly timeless.\u201D",
+        },
+        {
+          name: "COMMISSION & ARCHITECTURE",
+          text: "\u201CRami has an architect\u2019s eye for structure and a painter\u2019s eye for light. His attention to detail, geometry, and unhurried focus produced photos far beyond our expectations.\u201D",
+        },
+      ];
+
+      const textEl = document.getElementById("testimonial-text");
+      const buttons = document.querySelectorAll("#testimonial-buttons button");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const idx = parseInt(btn.getAttribute("data-index"), 10);
+          textEl.textContent = testimonials[idx].text;
+
+          buttons.forEach((b, i) => {
+            if (i === idx) {
+              b.classList.remove("text-muted-foreground/70");
+              b.classList.add("text-foreground");
+            } else {
+              b.classList.remove("text-foreground");
+              b.classList.add("text-muted-foreground/70");
+            }
+          });
+        });
+      });
+
+      // Scroll reveal observer
+      if ("IntersectionObserver" in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+              }
+            });
+          },
+          { threshold: 0.15 }
+        );
+        document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+      } else {
+        document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in"));
+      }
+    </script>
+  </body>
+</html>
